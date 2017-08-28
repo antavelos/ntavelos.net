@@ -24,6 +24,8 @@ wheels/
 *.egg-info/
 .installed.cfg
 *.egg
+*.swp
+*.swo
 
 # PyInstaller
 #  Usually these files are written by a python script from a template
@@ -55,7 +57,7 @@ coverage.xml
 local_settings.py
 static
 media
-
+db.sqlite3
 # Flask stuff:
 instance/
 .webassets-cache
