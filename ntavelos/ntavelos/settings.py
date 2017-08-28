@@ -24,7 +24,7 @@ SECRET_KEY = '2fm0q#^%9z2v!n7i$)e+5u^l7bs7eisritqp^%d%yg*928!4^t'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['ntavelos.net']
 
 
 # Application definition
