@@ -10,9 +10,9 @@
 		breakpoints: {
 			'global': { range: '*', href: 'static/first/css/style.css', lockViewport: true, viewport: 'minimal-ui' },
 			'wide': { range: '-1680', href: 'static/first/css/style-wide.css' },
-			'normal': { range: '-1280', href: 'css/style-normal.css' },
-			'mobile': { range: '-640', href: 'css/style-mobile.css' },
-			'mobilep': { range: '-360', href: 'css/style-mobilep.css' }
+			'normal': { range: '-1280', href: 'static/first/css/style-normal.css' },
+			'mobile': { range: '-640', href: 'static/first/css/style-mobile.css' },
+			'mobilep': { range: '-360', href: 'static/first/css/style-mobilep.css' }
 		}
 	});
 
