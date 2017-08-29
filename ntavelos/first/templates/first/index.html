@@ -1,4 +1,5 @@
 {% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -39,7 +40,7 @@
 </head>
 
 <body>
-
+
     <!--[> START PRELOADER AREA<]-->
     <!--<div class="preloader-area">-->
         <!--<div class="preloader">-->
@@ -151,11 +152,12 @@
                     <div class="col-md-8">
                         <div class="about-me-text">
                             <h2>i am a freelance software developer</h2>
-                            <p>... and I come from Greece. I'm currently based
-                            in Brussels where I have been living for the last 4
-                            years.</p>
-                            <p></p>
-                            <a class="about-button" href="">download cv</a>
+                            <p>I come from Greece, I'm currently based in
+                            Brussels where I moved {{ brussels_years }} years ago and I've been working in the IT industry since 2008.</p>
+                            <p>During the last {{ dev_years }} years I've been involved in backend as well as front end development
+                            of various web applications using mainly Python(Django/Flask). Click below to know more about my
+                            background.</p>
+                            <a class="about-button" href="/media/cv.txt">download cv</a>
                         </div>
                     </div>
                 </div>
