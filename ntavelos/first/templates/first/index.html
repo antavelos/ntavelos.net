@@ -1,54 +1,573 @@
 {% load static %}
+<!DOCTYPE html>
+<html lang="en">
 
-<!DOCTYPE HTML>
-<!--
-	Aerial 1.0 by HTML5 UP
-	html5up.net | @n33co
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Alex Ntavelos</title>
-		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<meta name="description" content="" />
-		<meta name="keywords" content="" />
-		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
-    <script src="{% static 'first/js/skel.min.js' %}"></script>
-    <script src="{% static 'first/js/init.js' %}"></script>
-		<noscript>
-      <link rel="stylesheet" type="text/css" href="{% static 'first/css/skel.css' %}" />
-      <link rel="stylesheet" type="text/css" href="{% static 'first/css/style.css' %}" />
-      <link rel="stylesheet" type="text/css" href="{% static 'first/css/style-wide.css' %}" />
-      <link rel="stylesheet" type="text/css" href="{% static 'first/css/style-noscript.css' %}" />
-		</noscript>
-		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
-		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
-	</head>
-	<body class="loading">
-		<div id="wrapper">
-			<div id="bg"></div>
-			<!--<div id="overlay"></div>-->
-			<div id="main">
+<head>
+    <!-- META TAG -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- SITE TITLE -->
+    <title>Alex Ntavelos</title>
+    <!-- FAVI ICON -->
+    <link rel="shortcut icon" type="image/x-icon" href="">
+    <!-- GOOGLE FONTS CSS -->
+    <link href="http://fonts.googleapis.com/css?family=Cousine:400,700|Montserrat:400,700&subset=latin-ext" rel="stylesheet" type="text/css">
+    <!-- BOOTSTRAP CSS -->
+    <link href="{% static 'first/css/bootstrap.min.css' %}" type="text/css" rel="stylesheet">
+    <!-- FONT AWESOME CSS -->
+    <link href="{% static 'first/css/font-awesome.min.css' %}" type="text/css" rel="stylesheet">
+    <!-- NORMALIZER CSS -->
+    <link href="{% static 'first/css/normalize.css' %}" type="text/css" rel="stylesheet">
+    <!-- OWL CSS -->
+    <link href="{% static 'first/css/owl.carousel.min.css' %}" type="text/css" rel="stylesheet">
+    <!-- OWL THEME CSS -->
+    <link href="{% static 'first/css/owl.theme.min.css' %}" type="text/css" rel="stylesheet">
+    <link href="{% static 'first/css/lightbox.min.css' %}" type="text/css" rel="stylesheet">
+    <!-- SNIMATED TEXT CSS -->
+    <link href="{% static 'first/css/animated-text.css' %}" type="text/css" rel="stylesheet">
+    <!-- MAIN CSS -->
+    <link href="{% static 'first/css/style.css' %}" type="text/css" rel="stylesheet">
+    <!-- RESPONSIVE CSS -->
+    <link href="{% static 'first/css/responsive.css' %}" type="text/css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
 
-				<!-- Header -->
-					<header id="header">
-						<h1>Alex Ntavelos</h1>
-						<p>Freelance Software Engineer</p>
-						<nav>
-							<ul>
-								<li><a href="https://linkedin.com/in/antavelos" class="fa fa-linkedin"><span>Twitter</span></a></li>
-								<li><a href="https:github.com/antavelos" class="fa fa-github"><span>Github</span></a></li>
-								<li><a href="mailto:alex@ntavelos.net" class="fa fa-envelope-o"><span>Email</span></a></li>
-							</ul>
-						</nav>
-					</header>
+<body>
 
-				<!-- Footer -->
-					<footer id="footer">
-						<span class="copyright">&copy; Alex Ntavelos {% now 'Y' %}</span>
-					</footer>
+    <!--[> START PRELOADER AREA<]-->
+    <!--<div class="preloader-area">-->
+        <!--<div class="preloader">-->
+            <!--<div class="preload"></div>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--[> END PRELOADER AREA <]-->
 
-			</div>
-		</div>
-	</body>
+    <!-- HEADER DESIGN AREA -->
+    <header id="home" class="header-area">
+        <div class="header-area-table">
+            <div class="header-area-tablecell">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <!-- HEADER TEXT DESIGN AREA -->
+                            <div class="header-text">
+                                <!--<h1>Hello</h1>-->
+                                <h3>Alex Ntavelos</h3>
+                                <h2 class="cd-headline clip is-full-width">
+                                    <span class="cd-words-wrapper">
+                                        <b class="is-visible">Freelance Software Developer</b>
+                                        <b>Based In Brussels</b>
+                                    </span>
+							    </h2>
+                                <div class="social-link">
+                                    <a href="https://linkedin.com/in/antavelos"><i class="fa fa-linkedin"></i></a>
+                                    <a href="https://github.com/antavelos"><i class="fa fa-github"></i></a>
+                                    <a href="mailto:alex@ntavelos.net"><i class="fa fa-envelope"></i></a>
+                                    <a href="skype:echo-chinese?chat"><i class="fa fa-skype"></i></a>
+                                    <a href="https://www.instagram.com/antavelos/"><i class="fa fa-instagram"></i></a>
+                                    <a
+                                      href="https://www.flickr.com/photos/125830011@N07/"><i class="fa fa-flickr"></i></a>
+                                </div>
+                            </div>
+                            <!-- / END HEADER TEXT DESIGN AREA -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- / END HEADER DESIGN AREA -->
+    <!--[> MENU DESIGN AREA <]-->
+    <!--<div class="menu-area">-->
+        <!--<div class="container">-->
+            <!--<div class="row">-->
+                <!--[> LOGO DESIGN AREA <]-->
+                <!--<div class="col-md-3 col-sm-2">-->
+                    <!--<div class="logo">-->
+                        <!--<a href="">Vhinno</a>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--[> / END LOGO DESIGN AREA <]-->
+                <!--<div class="col-md-9 col-sm-10">-->
+                    <!--<div class="mainmenu">-->
+                        <!--<div class="navbar navbar-nobg">-->
+                            <!--<div class="navbar-header">-->
+                                <!--<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">-->
+                                    <!--<span class="sr-only">Toggle navigation</span>-->
+                                    <!--<span class="icon-bar"></span>-->
+                                    <!--<span class="icon-bar"></span>-->
+                                    <!--<span class="icon-bar"></span>-->
+                                <!--</button>-->
+                            <!--</div>-->
+
+                            <!--<div class="navbar-collapse collapse">-->
+                                <!--<ul class="nav navbar-nav">-->
+                                    <!--<li class="active"><a class="smoth-scroll" href="#home">Home <div class="ripple-wrapper"></div></a>-->
+                                    <!--</li>-->
+                                    <!--<li><a class="smoth-scroll" href="#about">About me</a>-->
+                                    <!--</li>-->
+                                    <!--<li><a class="smoth-scroll" href="#service">service</a>-->
+                                    <!--</li>-->
+                                    <!--<li><a class="smoth-scroll" href="#work">portfolio</a>-->
+                                    <!--</li>-->
+                                    <!--<li><a class="smoth-scroll" href="#testimonial">testimonial</a>-->
+                                    <!--</li>-->
+                                    <!--<li><a class="smoth-scroll" href="#blog">blog</a>-->
+                                    <!--</li>-->
+                                    <!--<li><a class="smoth-scroll" href="#contact">contact</a>-->
+                                    <!--</li>-->
+                                <!--</ul>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--[> / END MENU DESIGN AREA <]-->
+
+    <!--[> ABOUT ME DESIGN AREA <]-->
+    <!--<section id="about" class="about-me-area section-padding">-->
+        <!--<div class="container">-->
+            <!--<div class="row">-->
+                <!--<div class="col-md-12">-->
+                    <!--<div class="section-title">-->
+                        <!--<h2>About me</h2>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="row">-->
+                <!--<div class="col-md-12">-->
+                    <!--<div class="col-md-4">-->
+                        <!--<div class="me-image">-->
+                            <!--<img src="assets/images/me.jpg" alt="">-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="col-md-8">-->
+                        <!--<div class="about-me-text">-->
+                            <!--<h2>i am a professional web developer</h2>-->
+                            <!--<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop.</p>-->
+                            <!--<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>-->
+                            <!--<a class="about-button" href="">hire me</a>-->
+                            <!--<a class="about-button" href="">download cv</a>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</section>-->
+    <!--[> / END ABOUT ME DESIGN AREA <]-->
+
+    <!--[> SERVICE DESIGN AREA <]-->
+    <!--<section id="service" class="service-area">-->
+        <!--<div class="container">-->
+            <!--<div class="row">-->
+                <!--<div class="col-md-12">-->
+                    <!--<div class="section-title">-->
+                        <!--<h2>service</h2>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="row">-->
+                <!--<div class="col-md-12">-->
+                    <!--<div class="row">-->
+                        <!--[> SINGLE SERVICE DESIGN AREA <]-->
+                        <!--<div class="col-md-4 col-sm-6">-->
+                            <!--<div class="single-service">-->
+                                <!--<i class="fa fa-camera"></i>-->
+                                <!--<h2>photography</h2>-->
+                                <!--<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--[> / END SINGLE SERVICE DESIGN AREA <]-->
+                        <!--[> SINGLE SERVICE DESIGN AREA <]-->
+                        <!--<div class="col-md-4 col-sm-6">-->
+                            <!--<div class="single-service">-->
+                                <!--<i class="fa fa-laptop"></i>-->
+                                <!--<h2>Web design</h2>-->
+                                <!--<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--[> / END SINGLE SERVICE DESIGN AREA <]-->
+                        <!--[> SINGLE SERVICE DESIGN AREA <]-->
+                        <!--<div class="col-md-4 col-sm-6">-->
+                            <!--<div class="single-service">-->
+                                <!--<i class="fa fa-code"></i>-->
+                                <!--<h2>web development</h2>-->
+                                <!--<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--[> / END SINGLE SERVICE DESIGN AREA <]-->
+                        <!--[> SINGLE SERVICE DESIGN AREA <]-->
+                        <!--<div class="col-md-4 col-sm-6">-->
+                            <!--<div class="single-service">-->
+                                <!--<i class="fa fa-wordpress"></i>-->
+                                <!--<h2>wordpress</h2>-->
+                                <!--<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--[> / END SINGLE SERVICE DESIGN AREA <]-->
+                        <!--[> SINGLE SERVICE DESIGN AREA <]-->
+                        <!--<div class="col-md-4 col-sm-6">-->
+                            <!--<div class="single-service">-->
+                                <!--<i class="fa fa-codepen"></i>-->
+                                <!--<h2>coding</h2>-->
+                                <!--<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--[> / END SINGLE SERVICE DESIGN AREA <]-->
+                        <!--[> SINGLE SERVICE DESIGN AREA <]-->
+                        <!--<div class="col-md-4 col-sm-6">-->
+                            <!--<div class="single-service">-->
+                                <!--<i class="fa fa-users"></i>-->
+                                <!--<h2>support</h2>-->
+                                <!--<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--[> / END SINGLE SERVICE DESIGN AREA <]-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</section>-->
+    <!--[> / END SERVICE DESIGN AREA <]-->
+
+    <!--[> WORK DESIGN AREA <]-->
+    <!--<section id="work" class="work section-padding">-->
+        <!--<div class="container">-->
+            <!--<div class="row">-->
+                <!--<div class="col-md-12">-->
+                    <!--<div class="section-title">-->
+                        <!--<h2>portfolio</h2>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="row">-->
+                <!--<div class="filters col-md-12">-->
+                    <!--<ul id="filters">-->
+                        <!--<li class="active" data-filter="*">All</li>-->
+                        <!--<li data-filter=".graphic">Graphic</li>-->
+                        <!--<li data-filter=".photography">Photography</li>-->
+                        <!--<li data-filter=".typography">Typography</li>-->
+                        <!--<li data-filter=".web">Web Design</li>-->
+                    <!--</ul>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="work-inner">-->
+                <!--<div class="row work-posts grid">-->
+                    <!--[> START SINGLE WORK DESIGN AREA <]-->
+                    <!--<div class="col-md-4 col-sm-4 web photography">-->
+                        <!--<div class="item">-->
+                            <!--<img src="assets/images/portfolio/1.jpg" alt="">-->
+                            <!--<a href="assets/images/portfolio/1.jpg" data-lightbox="roadtrip">-->
+                                <!--<div class="portfolio-caption">-->
+                                    <!--<h4>View</h4>-->
+                                <!--</div>-->
+                            <!--</a>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--[> END SINGLE WORK DESIGN AREA <]-->
+                    <!--[> START SINGLE WORK DESIGN AREA <]-->
+                    <!--<div class="col-md-4 col-sm-4 graphic photography">-->
+                        <!--<div class="item">-->
+                            <!--<img src="assets/images/portfolio/2.jpg" alt="">-->
+                            <!--<a href="assets/images/portfolio/2.jpg" data-lightbox="roadtrip">-->
+                                <!--<div class="portfolio-caption">-->
+                                    <!--<h4>View</h4>-->
+                                <!--</div>-->
+                            <!--</a>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--[> END SINGLE WORK DESIGN AREA <]-->
+                    <!--[> START SINGLE WORK DESIGN AREA <]-->
+                    <!--<div class="col-md-4 col-sm-4 web">-->
+                        <!--<div class="item">-->
+                            <!--<img src="assets/images/portfolio/3.jpg" alt="">-->
+                            <!--<a href="assets/images/portfolio/3.jpg" data-lightbox="roadtrip">-->
+                                <!--<div class="portfolio-caption">-->
+                                    <!--<h4>View</h4>-->
+                                <!--</div>-->
+                            <!--</a>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--[> END SINGLE WORK DESIGN AREA <]-->
+                    <!--[> START SINGLE WORK DESIGN AREA <]-->
+                    <!--<div class="col-md-4 col-sm-4 typography">-->
+                        <!--<div class="item">-->
+                            <!--<img src="assets/images/portfolio/4.jpg" alt="">-->
+                            <!--<a href="assets/images/portfolio/4.jpg" data-lightbox="roadtrip">-->
+                                <!--<div class="portfolio-caption">-->
+                                    <!--<h4>View</h4>-->
+                                <!--</div>-->
+                            <!--</a>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--[> END SINGLE WORK DESIGN AREA <]-->
+                    <!--[> START SINGLE WORK DESIGN AREA <]-->
+                    <!--<div class="col-md-4 col-sm-4 typography web">-->
+                        <!--<div class="item">-->
+                            <!--<img src="assets/images/portfolio/5.jpg" alt="">-->
+                            <!--<a href="assets/images/portfolio/5.jpg" data-lightbox="roadtrip">-->
+                                <!--<div class="portfolio-caption">-->
+                                    <!--<h4>View</h4>-->
+                                <!--</div>-->
+                            <!--</a>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--[> END SINGLE WORK DESIGN AREA <]-->
+                    <!--[> START SINGLE WORK DESIGN AREA <]-->
+                    <!--<div class="col-md-4 col-sm-4 graphic photography">-->
+                        <!--<div class="item">-->
+                            <!--<img src="assets/images/portfolio/6.jpg" alt="">-->
+                            <!--<a href="assets/images/portfolio/6.jpg" data-lightbox="roadtrip">-->
+                                <!--<div class="portfolio-caption">-->
+                                    <!--<h4>View</h4>-->
+                                <!--</div>-->
+                            <!--</a>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--[> END SINGLE WORK DESIGN AREA <]-->
+                    <!--[> START SINGLE WORK DESIGN AREA <]-->
+                    <!--<div class="col-md-4 col-sm-4 web typography">-->
+                        <!--<div class="item">-->
+                            <!--<img src="assets/images/portfolio/1.jpg" alt="">-->
+                            <!--<a href="assets/images/portfolio/1.jpg" data-lightbox="roadtrip">-->
+                                <!--<div class="portfolio-caption">-->
+                                    <!--<h4>View</h4>-->
+                                <!--</div>-->
+                            <!--</a>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--[> END SINGLE WORK DESIGN AREA <]-->
+                    <!--[> START SINGLE WORK DESIGN AREA <]-->
+                    <!--<div class="col-md-4 col-sm-4 photography">-->
+                        <!--<div class="item">-->
+                            <!--<img src="assets/images/portfolio/2.jpg" alt="">-->
+                            <!--<a href="assets/images/portfolio/2.jpg" data-lightbox="roadtrip">-->
+                                <!--<div class="portfolio-caption">-->
+                                    <!--<h4>View</h4>-->
+                                <!--</div>-->
+                            <!--</a>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--[> END SINGLE WORK DESIGN AREA <]-->
+                    <!--[> START SINGLE WORK DESIGN AREA <]-->
+                    <!--<div class="col-md-4 col-sm-4 graphic">-->
+                        <!--<div class="item">-->
+                            <!--<img src="assets/images/portfolio/3.jpg" alt="">-->
+                            <!--<a href="assets/images/portfolio/3.jpg" data-lightbox="roadtrip">-->
+                                <!--<div class="portfolio-caption">-->
+                                    <!--<h4>View</h4>-->
+                                <!--</div>-->
+                            <!--</a>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--[> END SINGLE WORK DESIGN AREA <]-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</section>-->
+    <!--[> / END WORK DESIGN AREA <]-->
+
+    <!--[> TESTIMONIAL DESIGN AREA <]-->
+    <!--<section id="testimonial" class="testimonial-area section-padding">-->
+        <!--<div class="container">-->
+            <!--<div class="row">-->
+                <!--<div class="col-md-12">-->
+                    <!--<div class="section-title">-->
+                        <!--<h2>testimonial</h2>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="row">-->
+                <!--<div class="col-md-12">-->
+                    <!--<div class="testimonial-list">-->
+                        <!--[> SINGLE TESTIMONIAL DESIGN AREA <]-->
+                        <!--<div class="single-testimonial">-->
+                            <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.-->
+                            <!--</p>-->
+                            <!--<h2>Larry Page</h2>-->
+                            <!--<h3 class="text-muted">CEO of Google</h3>-->
+                        <!--</div>-->
+                        <!--[> / END SINGLE TESTIMONIAL DESIGN AREA <]-->
+                        <!--[> SINGLE TESTIMONIAL DESIGN AREA <]-->
+                        <!--<div class="single-testimonial">-->
+                            <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.-->
+                            <!--</p>-->
+                            <!--<h2>Steve Jobs</h2>-->
+                            <!--<h3 class="text-muted">CEO of apple</h3>-->
+                        <!--</div>-->
+                        <!--[> / END SINGLE TESTIMONIAL DESIGN AREA <]-->
+                        <!--[> SINGLE TESTIMONIAL DESIGN AREA <]-->
+                        <!--<div class="single-testimonial">-->
+                            <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.-->
+                            <!--</p>-->
+                            <!--<h2>Mark Zuckerberg </h2>-->
+                            <!--<h3 class="text-muted">CEO of facebook</h3>-->
+                        <!--</div>-->
+                        <!--[> / END SINGLE TESTIMONIAL DESIGN AREA <]-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</section>-->
+    <!--[> / END TESTIMONIAL DESIGN AREA <]-->
+
+    <!--[> START BLOG DESIGN AREA <]-->
+    <!--<section id="blog" class="blog-area">-->
+        <!--<div class="container">-->
+            <!--<div class="row">-->
+                <!--<div class="col-md-12">-->
+                    <!--<div class="section-title">-->
+                        <!--<h2>blog</h2>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="row">-->
+                <!--[> START SINGLE BLOG DESIGN AREA <]-->
+                <!--<div class="col-md-4">-->
+                    <!--<div class="single-blog">-->
+                        <!--<img src="assets/images/blog/blog1.jpg" alt="" class="img-responsive">-->
+                        <!--<div class="blog-content">-->
+                            <!--<a href="single-blog.html"><h2>this is an image post</h2></a>-->
+                            <!--<h3 class="text-muted">date:07 aug 16</h3>-->
+                            <!--<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>-->
+                            <!--<a href="#" class="read-more">Read more</a>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--[> / END SINGLE BLOG DESIGN AREA <]-->
+                <!--[> START SINGLE BLOG DESIGN AREA <]-->
+                <!--<div class="col-md-4">-->
+                    <!--<div class="single-blog">-->
+                        <!--<img src="assets/images/blog/blog2.jpg" alt="" class="img-responsive">-->
+                        <!--<div class="blog-content">-->
+                            <!--<a href="single-blog.html"><h2>this is an image post</h2></a>-->
+                            <!--<h3 class="text-muted">date:07 aug 16</h3>-->
+                            <!--<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>-->
+                            <!--<a href="#" class="read-more">Read more</a>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--[> / END SINGLE BLOG DESIGN AREA <]-->
+                <!--[> START SINGLE BLOG DESIGN AREA <]-->
+                <!--<div class="col-md-4">-->
+                    <!--<div class="single-blog">-->
+                        <!--<img src="assets/images/blog/blog3.jpg" alt="" class="img-responsive">-->
+                        <!--<div class="blog-content">-->
+                            <!--<a href="single-blog.html"><h2>this is an image post</h2></a>-->
+                            <!--<h3 class="text-muted">date:07 aug 16</h3>-->
+                            <!--<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>-->
+                            <!--<a href="#" class="read-more">Read more</a>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--[> / END SINGLE BLOG DESIGN AREA <]-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</section>-->
+    <!--[> / END BLOG DESIGN AREA <]-->
+
+    <!--[> CONTACT DESIGN AREA <]-->
+    <!--<section id="contact" class="Contact section-padding">-->
+        <!--<div class="container">-->
+            <!--<div class="row">-->
+                <!--<div class="col-md-12">-->
+                    <!--<div class="section-title">-->
+                        <!--<h2>contact me</h2>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--[> CONTACT DETAILS DESIGN AREA <]-->
+            <!--<div class="row">-->
+                <!--<div class="col-md-4">-->
+                    <!--<div class="single-contact">-->
+                        <!--<h2>Address:</h2>-->
+                        <!--<p>121 King Street, Melbourne,Australia</p>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="col-md-4">-->
+                    <!--<div class="single-contact">-->
+                        <!--<h2>Phone:</h2>-->
+                        <!--<p>+61 (0)3 9251 5036</p>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="col-md-4">-->
+                    <!--<div class="single-contact">-->
+                        <!--<h2>Email:</h2>-->
+                        <!--<p>me@webitename.com</p>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--[> / END CONTACT DETAILS DESIGN AREA <]-->
+            <!--<div class="row">-->
+                <!--[> CONTACT FORM DESIGN AREA <]-->
+                <!--<div class="contact-form">-->
+                    <!--<form action="assets/php/contact.php" method="post">-->
+                        <!--<div class="form-group col-md-6">-->
+                            <!--<input type="text" name="name" class="form-control" id="first-name" placeholder="*Enter Your Name" required="required">-->
+                        <!--</div>-->
+                        <!--<div class="form-group col-md-6">-->
+                            <!--<input type="email" name="email" class="form-control" id="email" placeholder="* Enter Your Email" required="required">-->
+                        <!--</div>-->
+                        <!--<div class="form-group col-md-12">-->
+                            <!--<textarea rows="6" name="message" class="form-control" id="description" placeholder="* Enter YourMessage" required="required"></textarea>-->
+                        <!--</div>-->
+                        <!--<div class="col-md-12 text-center">-->
+                            <!--<button>Send Message</button>-->
+                        <!--</div>-->
+                    <!--</form>-->
+                <!--</div>-->
+                <!--[> / END CONTACT FORM DESIGN AREA <]-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</section>-->
+    <!--[> / END CONTACT DESIGN AREA <]-->
+
+    <!-- FOOTER DESIGN AREA -->
+    <footer class="footer-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                  <p>&copy; Alex Ntavelos {% now "Y" %}</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- / END FOOTER DESIGN AREA -->
+
+    <!-- START SCROOL UP DESIGN AREA -->
+    <div class="scroll-to-up">
+        <div class="scrollup">
+            <i class="fa fa-angle-up"></i>
+        </div>
+    </div>
+    <!-- / END SCROOL UP DESIGN AREA -->
+
+    <!-- LATEST JQUERY -->
+    <script src="{% static 'first/js/jquery.min.js' %}"></script>
+    <!-- BOOTSTRAP JS-->
+    <script src="{% static 'first/js/bootstrap.min.js' %}"></script>
+    <!-- OWL JS -->
+    <script src="{% static 'first/js/owl.carousel.min.js' %}"></script>
+    <!-- ANIMATED TEXT JS-->
+    <script src="{% static 'first/js/animated-text.js' %}"></script>
+    <!-- ISOTOPE JS -->
+    <script src="{% static 'first/js/isotope.pkgd.js' %}"></script>
+    <!-- LIGHTBOX JS -->
+    <script src="{% static 'first/js/lightbox.min.js' %}"></script>
+    <!-- STICKY JS -->
+    <script src="{% static 'first/js/jquery.sticky.js' %}"></script>
+    <!-- SWITCHER JS -->
+    <script src="{% static 'first/js/switcher.js' %}"></script>
+    <!-- MAIN JS-->
+    <script src="{% static 'first/js/main.js' %}"></script>
+</body>
+
 </html>
