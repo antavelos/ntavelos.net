@@ -58,6 +58,8 @@ local_settings.py
 /static
 /media
 db.sqlite3
+settings.py
+
 # Flask stuff:
 instance/
 .webassets-cache
